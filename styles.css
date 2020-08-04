@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: 'Lobster', cursive;
+    color: #2C4251;
+    background-color: #FEE9E1;
+  }
+.header-images {
+  background-color: #C0FDFB;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-images > picture {
+  display: flex;
+}
+
+.header-logo {
+  display: flex;
+  width: 800px;
+
+  margin-top: 25px;
+  margin-right: 150px;
+  margin-bottom: 25px;
+}
+
+
+nav {
+  background-color: #D16666;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.menu-container {
+    background-color: #D16666;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+.dropdown {
+display: flex;
+width: 200px;
+position: relative;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background: #D16666;
+  border-radius: 5px;
+  padding-top: 60px;
+  z-index: 1;
+  display: none;
+
+  position: absolute;   
+    top: -10px;
+    left: -30px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 0 20px 10px 20px;
+  margin: 10px;
+}
+
+.dropdown-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown > span {
+  z-index: 2;
+  position: relative;  /* This is important! */
+}
+
+.dropdown:hover .dropdown-menu { 
+  display: flex;
+  flex-direction: column;
+  background: #D16666;
+  z-index: 1;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #2C4251;
+}
+
+.social-media {
+  background-color: #D16666;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+  margin-left: 100px; 
+}
+
+.fb {
+  display: flex;
+  padding: 10px 10px;
+}
+
+.insta {
+  display: flex;
+  padding: 10px 10px;
+}
+
+main {
+    background-color: #9BC59D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+    margin-bottom: 300px;
+ }
+
+.mixed-gallery {
+  display: flex;
+}
+
+.cosplay {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cosplay img {
+  display: flex;
+  margin: 10px 10px;
+}
+
+h2 {
+  font-size: 40px;
+  padding: 20px 20px;
+}
+
+p {
+  padding: 20px 20px;
+}
+
+aside {
+    background-color: #D16666;
+}
