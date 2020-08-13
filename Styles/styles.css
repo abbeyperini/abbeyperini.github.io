@@ -5,44 +5,44 @@
   }
 
 html {
-    font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-size: 20px;
     font-family: 'Lobster', cursive;
     color: #2C4251;
     background-color: #FEE9E1;
   }
+
+.header-logo {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  }
+
 .header-images {
   background-color: #C0FDFB;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header-images > picture {
   display: flex;
+  align-items: space-around;
 }
-
-.header-logo {
-  display: flex;
-  width: 800px;
-
-  margin-top: 25px;
-  margin-right: 150px;
-  margin-bottom: 25px;
-}
-
 
 nav {
   background-color: #D16666;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  padding-left: 50px;
 }
 
 .menu-container {
-    background-color: #D16666;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
-  }
+  background-color: #D16666;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+
 
 .dropdown {
 display: flex;
@@ -61,7 +61,7 @@ position: relative;
 
   position: absolute;   
     top: -10px;
-    left: -30px;
+    left: -20px;
 }
 
 .dropdown-menu li {
@@ -76,7 +76,7 @@ position: relative;
 
 .dropdown > span {
   z-index: 2;
-  position: relative;  /* This is important! */
+  position: relative;
 }
 
 .dropdown:hover .dropdown-menu { 
@@ -91,22 +91,28 @@ a:link, a:visited, a:active {
   color: #2C4251;
 }
 
-.social-media {
-  background-color: #D16666;
+.social-media, .footer-social-media {
   display: flex;
   justify-content: space-around;
   padding: 10px 10px;
-  margin-left: 100px; 
 }
 
-.fb {
+.fb, .insta, .ravelry, .footer-ravelry, .footer-linkedin {
   display: flex;
   padding: 10px 10px;
 }
 
-.insta {
-  display: flex;
-  padding: 10px 10px;
+.footer-ravelry, .footer-linkedin {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.social-media {
+  background-color: #D16666;
+}
+
+.footer-social-media {
+  background-color: #C0FDFB;
 }
 
 main {
@@ -114,24 +120,33 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 150px;
-    margin-bottom: 300px;
+    padding-bottom: 25px;
  }
+
+a:hover {
+  color: #C0FDFB;
+}
+
+footer a:hover {
+  color: #9BC59D;
+}
 
 .mixed-gallery {
   display: flex;
 }
 
-.cosplay {
+.mixed-pics {
   display: flex;
+  flex-direction: column;
   overflow: hidden;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.cosplay img {
+.mixed-pics img {
   display: flex;
-  margin: 10px 10px;
+  margin: 20px 20px;
+  width: 500px;
 }
 
 h2 {
@@ -146,3 +161,81 @@ p {
 aside {
     background-color: #D16666;
 }
+
+.cosplay {
+  display: flex;
+}
+
+.cosplay-pics {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cosplay-pics img {
+  display: flex;
+  margin: 20px 20px;
+  width: 250px;
+}
+
+.fiber-arts {
+  display: flex;
+}
+
+.fiber-pics {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fiber-pics img {
+  display: flex;
+  margin: 20px 20px;
+  width: 250px;
+}
+
+footer {
+  display: flex;
+  background-color: #C0FDFB;
+  justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .mixed-pics {
+    flex-direction: column;
+  }
+
+  .cosplay-pics {
+    flex-direction: column;
+  }
+
+  .fiber-pics {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (min-width: 961px) {
+  .header-logo {
+    padding-right: 10%;
+  }
+  
+  .mixed-pics {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cosplay-pics {
+    flex-direction: row;
+  }
+
+  .fiber-pics {
+    flex-direction: row;
+  }
+}
+
+/* add responsive font size */

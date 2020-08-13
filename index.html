@@ -2,6 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width', initial-scale=1.0, maximum-scale=1.0/>
     <title>Abbey Normal Stitches home</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='Styles/styles.css'/>
@@ -11,10 +12,14 @@
     <header> 
       <div class='header-images'>
         <picture class='header-sabrina'>
-          <img src="Images/sabrina-smirk.jpg" alt="Abbey in a Chilling Adventures of Sabrina costume" width="800">
+          <img src="Images/sabrina-smirk200.jpg" alt="Abbey in a Chilling Adventures of Sabrina costume"
+               sizes="(max-width: 600px) 200px, (max-width: 1435px) 300px, (min-width: 1436px) 800px"
+               srcset="Images/sabrina-smirk200.jpg 200w, Images/sabrina-smirk300.jpg 300w, Images/sabrina-smirk800.jpg 800w">
         </picture>
         <picture class='header-logo'>
-          <img src="Images/ANS-logo.svg" alt="Abbey Normal Stitches logo" height="500" width="800">
+          <img src="Images/ANS-logo200.png" alt="Abbey Normal Stitches logo"
+          sizes="(max-width: 600px) 200px, (max-width: 1435px) 300px, (min-width: 1436px) 800px"
+          srcset="Images/ANS-logo200.png 200w, Images/ANS-logo300.png 300w, Images/ANS-logo.png 800w">
         </picture>
       </div>
     </header>
@@ -23,10 +28,10 @@
         <li class='dropdown'><span>Menu</span>
           <ul class='dropdown-menu'>
             <li>Home</li>
-            <li><a href='coding.html'>Coding</a></li> <!--github?-->
-            <li><a href='cosplay.html'>Cosplay</a></li> <!--gallery-->
-            <li><a href='fiber-arts.html'>Fiber Arts</a></li> <!--gallery and links to patterns-->
-            <li><a href='contact.html'>Contact</a></li> <!--form?-->
+            <li><a href='coding.html'>Coding</a></li>
+            <li><a href='cosplay.html'>Cosplay</a></li>
+            <li><a href='fiber-arts.html'>Fiber Arts</a></li>
+            <li><a href='contact.html'>Contact</a></li>
           </ul>
         </li>
       </ul> 
@@ -36,6 +41,9 @@
         </li>
         <li class='insta'>
           <a href='http://www.instagram.com/abbeynormalstitches'><img src="Images/insta-icon.png" alt="Abbey Normal Stitches Instagram" width="30"></a>
+        </li>
+        <li class="ravelry">
+          <a href="https://www.ravelry.com/projects/Alilaclie"><img src="Images/Ravelry-Logo-white.png" alt="Abbey Normal Stitches Ravelry Projects" width="30"></a>
         </li>
       </ul> 
     </nav> 
@@ -47,17 +55,25 @@
         </aside>
         <article>
           <div class="mixed-gallery">
-            <picture class="cosplay" alt="A few examples of Abbey's costumes">
-              <img src="Images/BB.jpg" alt="Bombshell Batwoman Away Game Variant" width="450">
-              <img src="Images/violet.jpg" alt="Violet Evergarden" width="400">
-              <img src="Images/sailor-moon.jpg" alt="Sailor Moon photo by Chris Wold" width="350">
-              <img src="Images/nezuko.jpg" alt="Nezuko Kamado photo by Patrick" width="600">
+            <!--mix up these pics!-->
+            <picture class="mixed-pics" alt="A few examples of Abbey's creative projects">
+              <img src="Images/laceshawl.jpg" alt="Dowland by Dee O'Keefe">
+              <img src="Images/nezuko.jpg" alt="Nezuko Kamado photo by Patrick">
             </picture>
           </div> 
         </article>
     </main>
     <footer>
-      <!--?-->
+      <p>&copy; 2020</p>
+      <p><a href="contact.html">Contact</a></p>
+      <ul class='footer-social-media'>
+        <li class="footer-ravelry">
+          <a href="https://www.ravelry.com/designers/abbey-normal-stitches"><img src="Images/Ravelry-name.png" alt="Abbey Normal Stitches Ravelry Projects" width="60"></a>
+        </li>
+        <li class="footer-linkedin">
+          <a href="https://www.linkedin.com/in/abigail-perini/"><img src="Images/Linked-logo.png" alt="Abbey Perini LinkedIn" width="30"></a>
+        </li>
+      </ul> 
     </footer>
   </body>
 </html>
