@@ -204,6 +204,10 @@ footer {
   justify-content: space-evenly;
 }
 
+footer p {
+  font-size: 15px;
+}
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .mixed-pics {
     flex-direction: column;
@@ -235,6 +239,10 @@ footer {
 
   .fiber-pics {
     flex-direction: row;
+  }
+
+  footer p {
+    font-size: 20px;
   }
 }
 
