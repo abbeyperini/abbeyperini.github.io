@@ -48,6 +48,7 @@ nav {
 display: flex;
 width: 200px;
 position: relative;
+justify-content: flex-end;
 }
 
 .dropdown-menu {
@@ -61,7 +62,7 @@ position: relative;
 
   position: absolute;   
     top: -10px;
-    left: -20px;
+    left: 75px;
 }
 
 .dropdown-menu li {
@@ -77,6 +78,7 @@ position: relative;
 .dropdown > span {
   z-index: 2;
   position: relative;
+  padding-right: 50px;
 }
 
 .dropdown:hover .dropdown-menu { 
@@ -97,7 +99,7 @@ a:link, a:visited, a:active {
   padding: 10px 10px;
 }
 
-.fb, .insta, .ravelry, .footer-ravelry, .footer-linkedin {
+.fb, .insta, .ravelry, .twitter, .footer-ravelry, .footer-linkedin {
   display: flex;
   padding: 10px 10px;
 }
@@ -131,8 +133,12 @@ footer a:hover {
   color: #9BC59D;
 }
 
-.mixed-gallery {
-  display: flex;
+h3 {
+  text-align: center;
+}
+
+.mixed-gallery, .cosplay, .fiber-arts {
+  padding: 50px;
 }
 
 .mixed-pics {
@@ -162,10 +168,6 @@ aside {
     background-color: #D16666;
 }
 
-.cosplay {
-  display: flex;
-}
-
 .cosplay-pics {
   display: flex;
   flex-direction: column;
@@ -178,10 +180,6 @@ aside {
   display: flex;
   margin: 20px 20px;
   width: 250px;
-}
-
-.fiber-arts {
-  display: flex;
 }
 
 .fiber-pics {
