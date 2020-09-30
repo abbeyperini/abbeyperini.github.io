@@ -17,6 +17,10 @@ html {
   padding-right: 5%;
   }
 
+.header-logo > img {
+  width: 100%;
+}
+
 .header-images {
   background-color: #C0FDFB;
   display: flex;
@@ -141,8 +145,8 @@ h3 {
 
 .mixed-pics img {
   display: flex;
-  margin: 20px 20px;
-  width: 300px;
+  margin-top: 50px;
+  width: 50%;
 }
 
 h2 {
@@ -165,7 +169,7 @@ p {
 .cosplay-pics img {
   display: flex;
   margin: 20px 20px;
-  width: 250px;
+  width: 50%;
 }
 
 .fiber-pics {
@@ -179,7 +183,7 @@ p {
 .fiber-pics img {
   display: flex;
   margin: 20px 20px;
-  width: 250px;
+  width: 50%;
 }
 
 footer {
@@ -199,6 +203,11 @@ a:link, a:active, a:visited {
 
 a:hover, a:focus {
   color: #D16666;
+}
+
+.medium-widget {
+  width: 50%;
+  margin: auto;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
