@@ -1,8 +1,7 @@
+// requirejs.config({nodeRequire: require});
+// let requirejs = require('requirejs');
+// let ally = require("ally.js");
 let myImage = document.getElementById('this_image');
-let menuContainer = document.getElementById("menu-container");
-let menu = document.getElementById("menu");
-let dropdown = document.getElementById("dropdown");
-let dropdownMenu = document.getElementById("dropdown-menu")
 
 let sources = ['Images/rainbow-scarf.jpg', 'Images/nezuko.jpg', 
   'Images/violet.jpg', "Images/rings-of-change.jpg", "Images/GLOW.jpg", 'Images/laceshawl.jpg'];
@@ -47,6 +46,6 @@ window.setInterval(() => {
     counter++; };
 }, 2000);
 
-var handle = ally.style.focusWithin();
+// var handle = ally.style.focusWithin();
 
-handle.disengage();
+// handle.disengage();
