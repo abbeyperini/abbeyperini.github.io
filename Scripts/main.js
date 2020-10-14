@@ -1,4 +1,8 @@
 let myImage = document.getElementById('this_image');
+let menuContainer = document.getElementById("menu-container");
+let menu = document.getElementById("menu");
+let dropdown = document.getElementById("dropdown");
+let dropdownMenu = document.getElementById("dropdown-menu")
 
 let sources = ['Images/rainbow-scarf.jpg', 'Images/nezuko.jpg', 
   'Images/violet.jpg', "Images/rings-of-change.jpg", "Images/GLOW.jpg", 'Images/laceshawl.jpg'];
@@ -43,4 +47,6 @@ window.setInterval(() => {
     counter++; };
 }, 2000);
 
-/* add code to keep copyright date current */
+var handle = ally.style.focusWithin();
+
+handle.disengage();
