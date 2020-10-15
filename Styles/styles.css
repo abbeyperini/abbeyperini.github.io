@@ -244,6 +244,19 @@ a:hover, a:focus {
   margin: auto;
 }
 
+.coding-aside {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.knitworthyDiv {
+  background-color: #F29A92;
+  width: 50%;
+  height: 50%;
+  padding: 2%;
+  border-radius: 8px;
+}
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .mixed-pics {
     flex-direction: column;
