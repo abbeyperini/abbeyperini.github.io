@@ -1740,3 +1740,21 @@ input, select, textarea {
 .logo {
 	background-color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 1600px) {
+	#circleLogo {
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 740px) {
+	#circleLogo {
+		padding-top: 15px;
+	}
+}
+
+@media (max-width: 600px) {
+	.contact-links {
+		flex-direction: column;
+	}
+}
