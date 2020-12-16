@@ -246,7 +246,16 @@ a:hover, a:focus {
 
 .coding-aside {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
+}
+
+.projectDivs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .knitworthyDiv {
@@ -254,6 +263,16 @@ a:hover, a:focus {
   width: 50%;
   height: 50%;
   padding: 2%;
+  border-radius: 8px;
+}
+
+.bujoDiv {
+  background-color: #40798C;
+  width: 50%;
+  height: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
   border-radius: 8px;
 }
 
