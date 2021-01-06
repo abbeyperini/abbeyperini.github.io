@@ -276,6 +276,10 @@ a:hover, a:focus {
   border-radius: 8px;
 }
 
+.Gachagif {
+  width: 375px;
+}
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .mixed-pics {
     flex-direction: column;
