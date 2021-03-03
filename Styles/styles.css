@@ -347,4 +347,12 @@ a:hover, a:focus {
   }
 }
 
+.portfolio {
+  background: #227C9D;
+}
+
+.redirect {
+  margin: 100px;
+}
+
 /* add responsive font size */
